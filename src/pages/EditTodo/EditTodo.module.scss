@@ -1,0 +1,31 @@
+.formWrapper {
+    border: 1px solid slategray;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 slategray;
+    margin: 40px auto;
+    width: 400px;
+}
+
+.formGroup {
+    &>label {
+        font-size: 14px;
+    }
+
+    &>input,
+    &>textarea {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        border: 2px solid slategray;
+        outline: none;
+        font-size: 16px;
+        padding: 10px 5px;
+        border-radius: 4px;
+        transition: 200ms ease-in-out;
+
+        &:focus {
+            border-color: slateblue;
+        }
+    }
+}
